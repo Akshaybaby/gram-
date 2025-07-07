@@ -47,14 +47,6 @@ export default function CreatePost({ onClose }: CreatePostProps) {
   const removeMedia = (index: number) => {
     setSelectedMedia(selectedMedia.filter((_, i) => i !== index))
   }
-
-  const popularVerses = [
-    { text: "For I know the plans I have for you," declares the Lord, "plans to prosper you and not to harm you, to give you hope and a future.", reference: "Jeremiah 29:11 (NIV)" },
-    { text: "Trust in the Lord with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight.", reference: "Proverbs 3:5-6 (NIV)" },
-    { text: "And we know that in all things God works for the good of those who love him, who have been called according to his purpose.", reference: "Romans 8:28 (NIV)" },
-    { text: "The Lord is my shepherd, I lack nothing.", reference: "Psalm 23:1 (NIV)" },
-  ]
-
   return (
     <AnimatePresence>
       <div className="fixed inset-0 z-50 overflow-y-auto">
